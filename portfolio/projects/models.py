@@ -1,4 +1,5 @@
 from django.db import models
+from photologue import models as photologue
 
 class Project(models.Model):
 	"""(project description)"""
@@ -6,6 +7,7 @@ class Project(models.Model):
 	slug = models.SlugField(blank=True)
 	description = models.TextField(blank=True)
 	skill = models.ManyToManyField('Skill', blank=True, null=True)
+	gallery = models.ForeignKey('photologue.Gallery', blank=True, null=True)
 	
 	featured = models.BooleanField(blank=True)
 

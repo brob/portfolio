@@ -3,6 +3,10 @@ from projects.models import Skill, Project
 from projects.views import *
 
 
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -18,3 +22,13 @@ urlpatterns = patterns('',
 	url(r'^projects/$', projectList),
 	url(r'^projects/(?P<slug>[-_\w]+)', projectDetail)
 )
+
+urlpatterns += patterns('',
+    (r'^photologue/', include('photologue.urls')),
+)
+
+
+if settings.DEBUG:
+	
+	urlpatterns += patterns('',
+		(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}))
