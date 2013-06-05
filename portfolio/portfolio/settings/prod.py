@@ -1,5 +1,4 @@
 # Base settings for all environments
-from .base import *
 
 DATABASES = {
     'default': {
