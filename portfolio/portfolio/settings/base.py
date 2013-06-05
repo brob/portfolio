@@ -1,5 +1,6 @@
 # Base settings for all environments
 
+from .prod import *
 
 ADMINS = (
     ('Bryan Robinson', 'bryanlrobinson@gmail.com'),
@@ -126,3 +127,5 @@ LOGGING = {
         },
     }
 }
+
+
