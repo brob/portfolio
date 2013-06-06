@@ -73,14 +73,6 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 
 
-TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-	'/Users/bryanrobinson/documents/personal/templates/portfolio/',
-
-)
-
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
