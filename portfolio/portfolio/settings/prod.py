@@ -38,6 +38,15 @@ STATIC_ROOT = '/home/bryanlrobinson/webapps/static_port/static-port/'
 STATIC_URL = '/static/static-port/'
 
 
+TEMPLATE_DIRS = (
+    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+	'/home/bryanlrobinson/webapps/customport/portfolio-templates',
+
+)
+
+
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
