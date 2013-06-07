@@ -79,8 +79,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 	"django.core.context_processors.i18n",
 	"django.core.context_processors.media",
 	"django.core.context_processors.static",
-	"allauth.account.context_processors.account",
-	"allauth.socialaccount.context_processors.socialaccount",
 	"django.core.context_processors.tz",
 	"django.contrib.messages.context_processors.messages",
 )
