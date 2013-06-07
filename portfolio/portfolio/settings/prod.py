@@ -31,20 +31,13 @@ MEDIA_URL = 'http://media.bryanlrobinson.com/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = '/home/bryanlrobinson/webapps/static_port/static-port/'
+STATIC_ROOT = '/home/bryanlrobinson/webapps/static_port/static-portfolio/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/static-port/'
 
 
-TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-	'/home/bryanlrobinson/webapps/customport/portfolio-templates/',
-
-)
 
 
 # Additional locations of static files
@@ -54,5 +47,16 @@ STATICFILES_DIRS = (
     # Don't forget to use absolute paths, not relative paths.	
 	'/home/bryanlrobinson/webapps/static_port/media/django-media/static',
 	'/home/bryanlrobinson/webapps/static_port/static-portfolio/portfolio-static',
+
+)
+
+
+
+
+TEMPLATE_DIRS = (
+    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+	'/home/bryanlrobinson/webapps/customport/portfolio-templates/',
 
 )
