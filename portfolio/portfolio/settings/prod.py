@@ -20,7 +20,7 @@ ALLOWED_HOSTS = []
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = '/home/bryanlrobinson/webapps/static_port/portfolio-media/'
+MEDIA_ROOT = '/home/bryanlrobinson/webapps/media/static_port/portfolio-media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
