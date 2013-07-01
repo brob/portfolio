@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'Baufra-DemiBold';
+	src: url('fonts/Baufra-DemiBold.eot');
+	src: local('☺'), url('fonts/Baufra-DemiBold.woff') format('woff'), url('fonts/Baufra-DemiBold.ttf') format('truetype'), url('fonts/Baufra-DemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+  
+@font-face {
+	font-family: 'Baufra-Medium';
+	src: url('fonts/Baufra-Medium.eot');
+	src: local('☺'), url('fonts/Baufra-Medium.woff') format('woff'), url('fonts/Baufra-Medium.ttf') format('truetype'), url('fonts/Baufra-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Moondance';
+	src: url('fonts/Moondance.eot');
+	src: local('☺'), url('fonts/Moondance.woff') format('woff'), url('fonts/Moondance.ttf') format('truetype'), url('fonts/Moondance.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fugaz One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fugaz One'), local('FugazOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/fugazone/v3/foh--NswBHNPbRHy7yEyyLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Uncial Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Uncial Antiqua'), local('UncialAntiqua-Regular'), url(http://themes.googleusercontent.com/static/fonts/uncialantiqua/v1/F-leefDiFwQXsyd6eaSllqtoDbLSSrCy0wD4zOeDSHc.woff) format('woff');
+}
