@@ -18,7 +18,7 @@ def home(request):
 	
 def projectList(request):
 	featuredProject = Project.objects.filter(featured=True)
-	regularProject = Project.objects.filter(featured=False)
+	regularProject = Project.objects.all()
 	return render_to_response("projects/project_list.html", {
 		'featured': featuredProject,
 		'projects': regularProject,
