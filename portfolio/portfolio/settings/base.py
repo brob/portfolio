@@ -1,7 +1,7 @@
 # Base settings for all environments
 
 from .prod import *
-
+import os
 ADMINS = (
     ('Bryan Robinson', 'bryanlrobinson@gmail.com'),
 )
@@ -47,7 +47,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'nj&seph6x40b83i+xp5wqu^v&yv)c28-aei4isc2c_-9r+&c%y'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (

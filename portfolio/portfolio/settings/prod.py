@@ -1,6 +1,7 @@
 # Base settings for all environments
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+import os
 
 DATABASES = {
     'default': {
@@ -8,7 +9,7 @@ DATABASES = {
         'NAME': 'portfolio',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'bryanrobinson',
-        'PASSWORD': 'Endymion',
+        'PASSWORD': os.environ['DB_PASS'],
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
