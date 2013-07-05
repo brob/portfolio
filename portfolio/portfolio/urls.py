@@ -25,6 +25,7 @@ urlpatterns = patterns('',
 
 urlpatterns += patterns('',
     (r'^photologue/', include('photologue.urls')),
+	(r'', include('simple-django-contact.urls')),
 )
 
 

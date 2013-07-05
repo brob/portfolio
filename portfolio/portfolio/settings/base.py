@@ -98,7 +98,7 @@ INSTALLED_APPS = (
 	'projects',
 	'photologue',
 	'flatblocks',
-	
+	'simple-django-contact',
 	'south',
 )
 

@@ -53,6 +53,14 @@ STATICFILES_DIRS = (
 
 
 
+EMAIL_HOST = 'smtp.webfaction.com'
+EMAIL_HOST_USER = 'fourwheelfood'
+EMAIL_HOST_PASSWORD = 'Asheron1'
+DEFAULT_FROM_EMAIL = 'contact@bryanlrobinson.com'
+SERVER_EMAIL = 'contact@bryanlrobinson.com'
+
+
+
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
