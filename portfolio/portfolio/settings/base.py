@@ -1,6 +1,7 @@
 # Base settings for all environments
 
-
+from .prod import *
+import os
 ADMINS = (
     ('Bryan Robinson', 'bryanlrobinson@gmail.com'),
 )
@@ -46,7 +47,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'nj&seph6x40b83i+xp5wqu^v&yv)c28-aei4isc2c_-9r+&c%y'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -71,14 +72,17 @@ ROOT_URLCONF = 'portfolio.urls'
 WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 
-
-TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-	'/Users/bryanrobinson/documents/personal/templates/portfolio/',
-
+TEMPLATE_CONTEXT_PROCESSORS = (
+	"django.contrib.auth.context_processors.auth",
+	"django.core.context_processors.request",
+	"django.core.context_processors.debug",
+	"django.core.context_processors.i18n",
+	"django.core.context_processors.media",
+	"django.core.context_processors.static",
+	"django.core.context_processors.tz",
+	"django.contrib.messages.context_processors.messages",
 )
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -94,9 +98,11 @@ INSTALLED_APPS = (
 	'projects',
 	'photologue',
 	'flatblocks',
-	
+	'simple-django-contact',
 	'south',
 )
+
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
@@ -126,3 +132,5 @@ LOGGING = {
         },
     }
 }
+
+

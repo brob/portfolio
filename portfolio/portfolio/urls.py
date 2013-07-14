@@ -20,11 +20,14 @@ urlpatterns = patterns('',
 
 	url(r'^$', home),
 	url(r'^projects/$', projectList),
+	url(r'^projects/skills/(?P<skillList>[-_&\w]+)', projectsWithSkills),
+	url(r'^projects/skills/$', skills),
 	url(r'^projects/(?P<slug>[-_\w]+)', projectDetail)
 )
 
 urlpatterns += patterns('',
     (r'^photologue/', include('photologue.urls')),
+	(r'', include('simple-django-contact.urls')),
 )
 
 
