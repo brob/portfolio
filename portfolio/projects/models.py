@@ -37,5 +37,11 @@ class Skill(models.Model):
 		search_fields = ('',)
 
 
+	@models.permalink
+	def get_absolute_url(self):
+		return ('projects.views.projectsWithSkills', (), {'skillList': self.slug,})
+
+
+
 	def __unicode__(self):
 		return u'%s' % (self.name)

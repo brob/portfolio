@@ -1,6 +1,6 @@
 # Base settings for all environments
-DEBUG = False
-TEMPLATE_DEBUG = False
+DEBUG = True
+TEMPLATE_DEBUG = True
 import os
 
 DATABASES = {
