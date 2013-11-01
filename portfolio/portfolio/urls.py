@@ -29,6 +29,9 @@ urlpatterns += patterns('',
     (r'^photologue/', include('photologue.urls')),
 	(r'', include('simple-django-contact.urls')),
 )
+urlpatterns = patterns('',
+    (r'^pages/', include('django.contrib.flatpages.urls')),
+)
 
 
 if settings.DEBUG:
